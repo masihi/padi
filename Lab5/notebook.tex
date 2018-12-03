@@ -281,7 +281,7 @@
 
     
     \begin{Verbatim}[commandchars=\\\{\}]
-{\color{incolor}In [{\color{incolor}22}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
+{\color{incolor}In [{\color{incolor}23}]:} \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
          
          
          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{1a)}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
@@ -315,11 +315,17 @@
          
          \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{1c)}\PY{l+s+se}{\PYZbs{}n}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
          
-         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Off\PYZhy{}policy refers to reinforcement learning methods that learn the value of a policy while following another, like Q\PYZhy{}learning.}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{On\PYZhy{}policy refers to reinforcement learning methods that learn the value of the policy that the agent is following.}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{SARSA is more stable than Q\PYZhy{}learning, as long as learning policy changes smoothly with Qt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The difference between the two update computations: the Q\PYZhy{}learning chooses the minimum value of the Q\PYZhy{}values for each action, in this code np.min(Q5r).}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
-         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{While the SARSA algorithm it is based on the the policy it is following, in this case coded Q5r[0][3].}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Off\PYZhy{}policy refers to reinforcement learning methods}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} 
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{that learn the value of a policy while following another, like Q\PYZhy{}learning.}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{On\PYZhy{}policy refers to reinforcement learning methods that learn the value of }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} 
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{the policy that the agent is following.}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{SARSA is more stable than Q\PYZhy{}learning, as long as }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} 
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{learning policy changes smoothly with Qt}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The difference between the two update computations: }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} 
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{the Q\PYZhy{}learning chooses the minimum value of the Q\PYZhy{}values }\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} 
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{for each action, in this code np.min(Q5r).}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{While the SARSA algorithm it is based on the the policy it}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)} 
+         \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{ is following, in this case coded Q5r[0][3].}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \end{Verbatim}
 
 
@@ -332,11 +338,17 @@ Sarsa Q-value = 3.19078
 
 1c)
 
-Off-policy refers to reinforcement learning methods that learn the value of a policy while following another, like Q-learning.
-On-policy refers to reinforcement learning methods that learn the value of the policy that the agent is following.
-SARSA is more stable than Q-learning, as long as learning policy changes smoothly with Qt
-The difference between the two update computations: the Q-learning chooses the minimum value of the Q-values for each action, in this code np.min(Q5r).
-While the SARSA algorithm it is based on the the policy it is following, in this case coded Q5r[0][3].
+Off-policy refers to reinforcement learning methods
+that learn the value of a policy while following another, like Q-learning.
+On-policy refers to reinforcement learning methods that learn the value of 
+the policy that the agent is following.
+SARSA is more stable than Q-learning, as long as 
+learning policy changes smoothly with Qt
+The difference between the two update computations: 
+the Q-learning chooses the minimum value of the Q-values 
+for each action, in this code np.min(Q5r).
+While the SARSA algorithm it is based on the the policy it
+ is following, in this case coded Q5r[0][3].
 
     \end{Verbatim}
 
